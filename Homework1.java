@@ -54,9 +54,21 @@ public class Homework1 {
       System.out.println(sentence);
 
       // Having the string "Coral is either the stupidest animal or the smartest rock" declare...
-        String str = "Coral is either the stupidest animal or the smartest rock";
+        String str = "Coral is either the stupidest animal or the smartest rocks";
         String newStr = str.replace("the", "THE");
         System.out.println(newStr);
+
+      // Count the number of words
+      String string = "Coral is either the stupidest animal or the smartest rocks";
+      int countWord = string.split("the", 3).length;
+      System.out.println(countWord);
+
+      // Declare a string that is made from the first 5 character and the last 5
+      String string1 = "Coral is either the stupidest animal or the smartest rocks";
+      String string2 ="Coral";
+      String string3 = "rocks";
+      System.out.println(string2 + string3);
+      System.out.println(string2.concat(string3));
 
 
 
