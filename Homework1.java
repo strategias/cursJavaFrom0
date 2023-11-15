@@ -1,3 +1,6 @@
+import java.util.Set;
+import java.util.regex.Matcher;
+
 public class Homework1 {
 
     public static void main(String[] args){
@@ -51,11 +54,21 @@ public class Homework1 {
       System.out.println(sentence);
 
       // Having the string "Coral is either the stupidest animal or the smartest rock" declare...
-        String newSentence = "Coral is either the stupidest animal or the smartest rock";
+        String str = "Coral is either the stupidest animal or the smartest rock";
+        String newStr = str.replace("the", "THE");
+        System.out.println(newStr);
+
+
 
 
         }
 
+            }
 
-    }
+
+
+
+
+
+
 
