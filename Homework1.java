@@ -70,6 +70,33 @@ public class Homework1 {
       System.out.println(string2 + string3);
       System.out.println(string2.concat(string3));
 
+      //daca lungimea e 10 ultimul element va fi pe pozitia 9 pentru ca incepem de la 0
+      String text = "Coral is either the stupidest animal or the smartest rock";
+      System.out.println("lungime " + text.length()); // ca sa aflam lungimea totala a textului
+      System.out.println("substring cu 1 parametru: " + text.substring(6)); // afisam de la indexul 6,
+        // pana la indexul 6 nu afisam nimic
+      System.out.println("substring cu doi parametrii: " + text.substring(6,15)); // afisam intre indexele 6-15 textul
+      System.out.println("substring cu doi parametrii: " + text.substring(text.length()-3)); // din totalul
+        //de 57 de caractere afisam doar ultimele 3
+      System.out.println("Substring fara ultimele caractere: " + text.substring(0,(text.length() -2))); // afisam textul
+        // de la indexul 0 pana la lungimea 57-2
+
+        // Declare a string that is made from the first 5 character and the last 5
+        String text2 = "Coral is either the stupidest animal or the smartest rock";
+        System.out.println("lungimea: " + text2.substring(0,5) + text2.substring((text2.length() -5))); // afisam textul
+        //format din primele 5 caractere de la indexul 0 pana la 5, si ultimele 5 caractere format din ultimele 5 ch
+
+
+        //afisati de cate ori apare cuvantul "the"
+        String text3 = "Coral is either the stupidest animal or the smartest rock";
+        String noThe = text3.replaceAll("the","");
+        System.out.println("textul fara the: " +noThe);
+        int the = (text.length() - noThe.length())/3;
+        System.out.println("numarul the: " + the);
+
+
+
+
 
 
 
