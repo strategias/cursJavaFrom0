@@ -14,21 +14,21 @@ public class Homework2 {
         */
 
         System.out.println("Scrie un string cu 10 caractere care sa contina litera x");
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
+        Scanner scanner1 = new Scanner(System.in);
+        String input = scanner1.next();
         System.out.println("Stringul format din primele 3 litere si ultimele 3 este " + input.substring(0, 3)
                 + input.substring((input.length() - 3)));
 
 
         System.out.println("Scrie un string cu 10 caractere care sa contina litera x");
         Scanner scanner2 = new Scanner(System.in);
-        String input2 = scanner.next();
+        String input2 = scanner2.next();
         String replacedInput = input2.toLowerCase().replaceAll("a", "?");
         System.out.println("Stringul unde am inlocuit litera 'a' cu '?': " + replacedInput);
 
         System.out.println("Scrie un string cu 10 caractere care sa contina litera x");
         Scanner scanner3 = new Scanner(System.in);
-        String input3 = scanner.next();
+        String input3 = scanner3.next();
         System.out.println("X este pe pozitia " + input3.indexOf("x"));
 
         System.out.println("Scrie un string cu 10 caractere care sa contina litera x");
@@ -47,7 +47,7 @@ public class Homework2 {
 
 
         //citim alt string de la tastatura, verificam intr-un if daca contine doar litere sau nu
-        System.out.println("Scrie ceva: "); // why doesn't it work with space between characters?
+        System.out.println("Verificam daca stringul contine doar litere: "); // why doesn't it work with space between characters?
         Scanner scanner5 = new Scanner(System.in);
         String newString = scanner5.next();
         if (newString.matches("[a-zA-Z]+")) {
@@ -69,7 +69,7 @@ public class Homework2 {
         // acel caracter peste tot in afara de primul si ultimul
         Scanner scanner7 = new Scanner(System.in);
 
-        System.out.println("Scrie: ");
+        System.out.println("Scrie alabala portocala si inlocuieste un caracter: ");
         String originalString = scanner7.nextLine();
 
         System.out.println("Caracterul ce inlocuiesti: ");
@@ -87,7 +87,7 @@ public class Homework2 {
 
 
         Scanner scanner8 = new Scanner(System.in);
-        System.out.println("Scrie un numar");
+        System.out.println("Scrie un numar si verifica daca este natural");
 
         if (scanner8.hasNextInt()) {                           // folosim hasNextInt sa ne dam seama ce este in input
             int number = scanner8.nextInt();
@@ -125,6 +125,8 @@ public class Homework2 {
                     System.out.println(rezultat + " este mai mic ca 5");
                 else {
                     System.out.println(rezultat + " este mai mare ca 5");
+                }
+
 
 
                     Scanner scanner12 = new Scanner(System.in);
@@ -197,7 +199,7 @@ public class Homework2 {
                         int cifraString = String.valueOf(cifra).length();
                         int minlength = 4;
                         int exactlength = 6;
-                        int numberpar = cifra / 2;
+
 
                         if (cifraString >= minlength) {
                             System.out.println("Are cel putin 4 cifre");
@@ -205,6 +207,7 @@ public class Homework2 {
                             System.out.println("Are mai putine cifre");
                         } else if (cifraString == exactlength) {
                             System.out.println("Are exact 6 cifre");
+                        }
 
                             // Verifica daca x este numar par sau impar
                             System.out.println("Introdu cifrele: ");
@@ -303,8 +306,8 @@ public class Homework2 {
                 }
             }
         }
-    }
-}
+
+
 
 
 
