@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Homework2 {
@@ -205,7 +206,7 @@ public class Homework2 {
                         } else if (cifraString == exactlength) {
                             System.out.println("Are exact 6 cifre");
 
-                        // Verifica daca x este numar par sau impar
+                            // Verifica daca x este numar par sau impar
                             System.out.println("Introdu cifrele: ");
                             Scanner scanner18 = new Scanner(System.in);
                             int numarul = scanner18.nextInt();
@@ -215,7 +216,7 @@ public class Homework2 {
                                 System.out.println("Impar");
 
 
-                        // x,y,z integers, afiseaza care este cele mai mari dintre ele
+                            // x,y,z integers, afiseaza care este cele mai mari dintre ele
                             Scanner scanner19 = new Scanner(System.in);
                             System.out.println("Introdu trei numere");
 
@@ -280,23 +281,30 @@ public class Homework2 {
                             // (expected: not allowed/ actual: not allowed
 
 
+                            Scanner scanner21 = new Scanner(System.in);
+                            Random random = new Random();
+                            System.out.println("Guess the number!");
+                            int numberGuessed = scanner21.nextInt();
+                            int diceRoll = random.nextInt(6) + 1;
+                            System.out.println("The number was " + diceRoll);
+                            if (numberGuessed >= 1 && numberGuessed <= 6) {
+                                if (numberGuessed == diceRoll) {
+                                    System.out.println("Good job!");
+                                } else
+                                    System.out.println("Sorry");
+
+
+                            }
+
                         }
 
-                    }
 
-
-
-
-
-
-
-
-
-                        }
                     }
                 }
             }
         }
+    }
+}
 
 
 
