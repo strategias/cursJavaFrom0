@@ -101,26 +101,34 @@ public class Homework1 {
         Scanner scanner20 = new Scanner(System.in);
         System.out.println("Intrduceti varsta: ");
         int varsta = scanner20.nextInt();
-        System.out.println("Sunteti insotit de mama?");
-        boolean insotitDeMama = scanner20.nextBoolean();
-        System.out.println("Sunteti insotit de tata");
-        boolean insotitDeTata = scanner20.nextBoolean();
+
         System.out.println("Aveti pasaport?");
         boolean hasPasaport = scanner20.nextBoolean();
+
+        System.out.println("Sunteti insotit de mama?");
+        boolean insotitDeMama = scanner20.nextBoolean();
+
+        System.out.println("Sunteti insotit de tata");
+        boolean insotitDeTata = scanner20.nextBoolean();
+
         System.out.println("Aveti permisiune de la mama?");
         boolean hasActPermisiuneMama = scanner20.nextBoolean();
+
         System.out.println("Aveti permisiunea de la tata?");
         boolean hasActPermisiuneTata = scanner20.nextBoolean();
 
 
         //Conditii de imbarcare
-        if (varsta >= 18 && hasPasaport )
-            if (varsta < 18 && hasPasaport && insotitDeTata && insotitDeMama)
-                if (varsta < 18 && hasPasaport && insotitDeTata && hasActPermisiuneMama
-                || insotitDeMama && hasActPermisiuneTata)
+        if (varsta >= 18 && hasPasaport) {
             System.out.println("Puteti imbarca");
-        else
+        } else if (varsta < 18 && hasPasaport && insotitDeTata && insotitDeMama) {
+            System.out.println("Puteti imbarca");
+        } else if (varsta < 18 && hasPasaport && ((insotitDeTata && hasActPermisiuneMama) || (insotitDeMama && hasActPermisiuneTata))) {
+            System.out.println("Puteti imbarca");
+        } else {
             System.out.println("Nu puteti imbarca");
+
+        }
 
 
 
