@@ -149,14 +149,108 @@ public class Homework2 {
                     else if (m < n)
                         System.out.println(n + " este mai mare");
 
+                    //k,l,o laturile unui triunghi, verificam daca triunghiul e isoscel, echilateral sau oarecare
+                    Scanner scanner14 = new Scanner(System.in);
+                    System.out.println("Introdu latura k");
+                    double k = scanner14.nextDouble();
+                    System.out.println("Introdu latura l");
+                    double l = scanner14.nextDouble();
+                    System.out.println("Introdu latura o");
+                    double o = scanner14.nextDouble();
+                    if (k == l && l == o)
+                        System.out.println("Triunghiul este echilateral");
+                    else if (k == l || l == o || o == k)
+                        System.out.println("Triunghiul este isoscel");
+                    else
+                        System.out.println("Triunghiul este oarecare");
 
+                    //Citeste o litera de la tastatura si verifica daca e o vocala sau o consoana
+                    System.out.println("Scrie o litera: ");
+                    Scanner scanner15 = new Scanner(System.in);
+                    if (scanner15.hasNext("[aeiouAEIOU]")) {
+                        System.out.println("e vocala");
+                    } else if (scanner15.hasNext("[a-zA-Z]")) {
+                        System.out.println("e consoana");
+
+                        //Transforma si printeaza notele din sistem romanesc - perfect example to use switch here
+                        System.out.println("Ce nota ai luat?");
+                        Scanner scanner16 = new Scanner(System.in);
+                        int nota = scanner16.nextInt();
+                        if (nota <= 4)
+                            System.out.println("F");
+                        else if (nota >= 4)
+                            System.out.println("E");
+                        else if (nota >= 6)
+                            System.out.println("D");
+                        else if (nota >= 7)
+                            System.out.println("C");
+                        else if (nota >= 8)
+                            System.out.println("B");
+                        else if (nota >= 9)
+                            System.out.println("A");
+
+                        //Verifica daca x are minim 4 cifre/ exact 6 cifre
+                        System.out.println("Introdu cifrele: ");
+                        Scanner scanner17 = new Scanner(System.in);
+                        int cifra = scanner17.nextInt();
+                        int cifraString = String.valueOf(cifra).length();
+                        int minlength = 4;
+                        int exactlength = 6;
+                        int numberpar = cifra / 2;
+
+                        if (cifraString >= minlength) {
+                            System.out.println("Are cel putin 4 cifre");
+                        } else if (cifraString < minlength) {
+                            System.out.println("Are mai putine cifre");
+                        } else if (cifraString == exactlength) {
+                            System.out.println("Are exact 6 cifre");
+
+                        // Verifica daca x este numar par sau impar
+                            System.out.println("Introdu cifrele: ");
+                            Scanner scanner18 = new Scanner(System.in);
+                            int numarul = scanner18.nextInt();
+                            if (numarul % 2 == 0)
+                                System.out.println("Par");
+                            else
+                                System.out.println("Impar");
+
+
+                        // x,y,z integers, afiseaza care este cele mai mari dintre ele
+                            Scanner scanner19 = new Scanner(System.in);
+                            System.out.println("Introdu trei numere");
+
+                            int num1 = scanner19.nextInt();
+                            int num2 = scanner19.nextInt();
+                            int num3 = scanner19.nextInt();
+
+                            int celMaiMare = num1;
+
+
+                            if (num2 > celMaiMare) {
+                                celMaiMare = num2;
+                                if (num3 > celMaiMare)
+                                    celMaiMare = num3;
+                            }
+
+                            System.out.println("Cel mai mare numar e " + celMaiMare);
+
+
+
+
+
+
+
+
+
+                        }
+                    }
                 }
-
-
             }
         }
     }
 }
+
+
 
 
 
