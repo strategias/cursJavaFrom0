@@ -48,13 +48,18 @@ public class curs2 {
 
         // nested if
 
-        System.out.println("Scrie ceva: ");
+     /*   System.out.println("Scrie ceva: ");
         Scanner scanner5 = new Scanner(System.in);
         String newString = scanner5.next();
         if (newString.matches("[a-zA-Z]+")) {
             System.out.println("true");
         } else if (newString.matches("[0-9]+")){
             System.out.println("false");
+
+            */
+
+        for (int k =0; k <= 10; k++) {
+            System.out.println(k);
         }
     }
 }
