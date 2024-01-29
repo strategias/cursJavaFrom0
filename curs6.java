@@ -12,8 +12,12 @@ public class curs6 {
             for (int i = 1; i < 10; i++) {
                 System.out.println(i);
                 printNumbers(i);
+
+
                 int sum = getSum(1, 2);
+
                 double salarNou = getMarireSalar(7700, 20);
+
                 boolean isParResult = isPar(20);
                 System.out.println("Is Par: " + isParResult);
             }
